@@ -1,0 +1,24 @@
+
+@mixin desktop {
+  @media screen and (min-width: $md) {
+    &{ @content; }
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: $md) {
+    &{ @content; }
+  }
+}
+
+@mixin below($below) {
+  @media screen and (max-width: $below) {
+    &{ @content; }
+  }
+}
+
+@mixin above($above) {
+  @media screen and (min-width: $above) {
+    &{ @content; }
+  }
+}

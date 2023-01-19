@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+}
+
+.limited-content {
+  margin: 0 auto;
+  width: 75%; 
+
+  @include mobile {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+// Titles style
+h1 {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  color: $third;
+}
+
+// Buttons style
+button {
+  background-color: $primary;
+  border: $primary;
+  color: $white;
+  padding: 15px 25px;
+  font-size: 2rem;
+  border-radius: 25px;
+  transition: all ease-in-out 0.2s;
+
+  &:hover {
+    background-color: $third;
+  }
+}
