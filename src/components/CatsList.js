@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Api from './Api'
+import Header from './Header'
 import ListElement from './ListElement'
 
 export default function CatsList() {
@@ -14,6 +15,7 @@ export default function CatsList() {
 
   return (
     <div className='limited-content'>
+      <Header />
       <div className='cats-list--container'>
         {cats && cats.map(cat =>
           <div className='contestant--container'>
