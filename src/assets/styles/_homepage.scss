@@ -43,13 +43,13 @@ header {
     object-fit: cover;
     object-position: center;
     cursor: pointer;
+    transition: all ease-in 0.3s;
   }
 }
 
 .app {
   min-height: 100vh;
   height: 100%;
-  max-width: 100vw;
   padding: 5% 0;
   background-color: $secondary;
 }
