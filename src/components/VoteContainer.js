@@ -26,6 +26,7 @@ export default function VoteContainer() {
         setContestants(randoms.map(random => response.data[random]))
     })
 
+    // Vote animation
     const timer = setTimeout(() => {
       setScale(1)
     }, 200);
